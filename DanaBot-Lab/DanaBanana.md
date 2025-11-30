@@ -54,11 +54,7 @@ Además, en ANY.RUN podemos acceder a un análisis más avanzado, lo que nos per
 
 ![Figura 9](img/dana9.png)
 
-Aun así, Hybrid-Analysis nos confirma otros datos esenciales para el laboratorio, como la extencion del segundo archivo malicioso que el atacante utilizó durante el contacto inicial.
-
-![Figura 10](img/dana10.png)
-
-Mientras revisaba el reporte completo, en la sección Dropped Files aparecen justamente los elementos que necesitábamos para responder las últimas preguntas del laboratorio. Ahí es donde se listan los archivos que el malware genera o descarga durante la ejecución, junto con sus extensiones, nombres y hashes, lo cual permite completar esa parte sin necesidad de tener acceso a la muestra original.
+Aun así, Hybrid-Analysis nos confirma otros datos esenciales para el laboratorio, en la sección Dropped Files aparecen justamente los elementos que necesitábamos para responder las últimas preguntas del laboratorio. Ahí es donde se listan los archivos que el malware genera o descarga durante la ejecución, junto con sus extensiones, nombres y hashes, lo cual permite completar esa parte sin necesidad de tener acceso a la muestra original.
 
 ![Figura 11](img/dana11.png)
 
