@@ -1,4 +1,4 @@
-### Analiza y triunfaras
+### Analiza y triunfarás
 
 Antes que nada, quiero comentar algo: aunque este laboratorio es relativamente sencillo, requiere bastante paciencia y perseverancia. Si quieren obtener los resultados correctos, es clave prestar atención a los detalles: las fechas de los análisis, los nombres de los archivos y cualquier pista pequeña que pueda parecer insignificante.
 
@@ -47,7 +47,7 @@ Aun así, Hybrid-Analysis nos confirma otros datos esenciales para el laboratori
 
 ![Figura 10](img/dana10.png)
 
-Mientras revisaba el reporte completo, hubo un detalle que terminó encajando varias piezas: en la parte donde se listan los archivos generados durante la ejecución aparecen justamente los elementos que necesitábamos para responder las últimas preguntas del laboratorio. Ahí es donde se listan los archivos que el malware genera o descarga durante la ejecución, junto con sus extensiones, nombres y hashes, lo cual permite completar esa parte sin necesidad de tener acceso a la muestra original.
+Mientras revisaba el reporte completo, en la sección Dropped Files aparecen justamente los elementos que necesitábamos para responder las últimas preguntas del laboratorio. Ahí es donde se listan los archivos que el malware genera o descarga durante la ejecución, junto con sus extensiones, nombres y hashes, lo cual permite completar esa parte sin necesidad de tener acceso a la muestra original.
 
 ![Figura 11](img/dana11.png)
 
