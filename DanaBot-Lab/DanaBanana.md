@@ -20,8 +20,12 @@ Al seguir revisando, noté lo siguiente:
 
 También consulté el dominio en URLhaus, donde aparecía reportado en varios registros recientes, lo que reforzaba la correlación con campañas de distribución de malware.
 
-![Figura 5](img/dana4.png)
+![Figura 4](img/dana4.png)
 
-![Figura 6](img/dana5.png)
+Con estos indicios sobre la mesa, era momento de ponernos en marcha y empezar a reconstruir paso a paso lo que realmente había ocurrido en la captura.
+Al revisar el inicio de la captura, se puede observar claramente el three-way handshake previo a la conexión TCP donde ocurre el acceso inicial. También la dirección IP asociada al atacante y el dominio previamente identificado en Virustotal y URLhaus.
 
+![Figura 5](img/dana5.png)
+
+![Figura 6](img/dana6.png)
 
