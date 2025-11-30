@@ -5,4 +5,4 @@ Observen bien las fechas de los analisis y los nombres de los archivos, mas si q
 
 Antes que nada quiero mostrarles algo que me pego en los ojos ni bien abri la captura con Wireshark.
 
-![Figura 1](/img/dana0.png)
+![Figura 1](img/dana0.png)
