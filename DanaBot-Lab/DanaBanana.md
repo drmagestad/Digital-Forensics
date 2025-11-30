@@ -1,13 +1,16 @@
 ### Analiza y triunfaras
 
-Bueno, primero que nada quiero decir que aunque es un lab facil, hay que tener mucha paciencia y perceverancia.
-Observen bien las fechas de los analisis y los nombres de los archivos, mas si quieren los resultados correctos.
+Antes que nada, quiero comentar algo: aunque este laboratorio es relativamente sencillo, requiere bastante paciencia y perseverancia. Si quieren obtener los resultados correctos, es clave prestar atención a los detalles: las fechas de los análisis, los nombres de los archivos y cualquier pista pequeña que pueda parecer insignificante.
 
-Antes que nada quiero mostrarles algo que me pego en los ojos ni bien abri la captura con Wireshark.
+Lo primero que me llamó la atención, apenas abrí la captura en Wireshark, fue esto:
 
 ![Figura 1](img/dana0.png)
 
-Como analista, creo que una de las cosas que debemos tener en cuenta en todo momento es:
-- quien se conecta a nuestra red y de donde se conecta.
+Como analistas, una de las primeras cosas que debemos tener siempre presente es:
+
+Quién se está conectando a nuestra red y desde dónde lo está haciendo.
+
+Al seguir revisando, noté lo siguiente:
 
 ![Figura 1](img/dana1.png)
+
