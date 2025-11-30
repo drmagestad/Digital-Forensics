@@ -27,5 +27,19 @@ Al revisar el inicio de la captura, se puede observar claramente el three-way ha
 
 ![Figura 5](img/dana5.png)
 
+Si prestamos suficiente atención a los primeros paquetes posteriores a la conexión, notamos que se produce una transferencia de datos acompañada por un código de estado HTTP 200 OK. Siguiendo ese hilo, es posible identificar con claridad el archivo que se está intercambiando durante la sesión.
+
 ![Figura 6](img/dana6.png)
+
+Y acá es donde entra en juego el tema de los hashes y todo ese análisis adicional. Usualmente estoy acostumbrado a descargar el archivo directamente y calcular su hash con alguna herramienta en Linux, pero en este caso eso no es posible: el dominio ya no funciona. Por lo tanto, toca investigar análisis previos, reportes ya publicados o cualquier referencia que aparezca relacionada con el nombre del archivo para avanzar con la identificación.
+
+En mi búsqueda, encontré que en ANY.RUN había información relacionada con el archivo, y para corroborarlo lo verifiqué también en Hybrid-Analysis, donde los resultados coincidían y reforzaban la identificación del malware.
+
+![Figura 7](img/dana7.png)
+
+![Figura 8](img/dana8.png)
+
+
+
+
 
