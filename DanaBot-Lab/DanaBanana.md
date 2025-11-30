@@ -8,9 +8,18 @@ Lo primero que me llamó la atención, apenas abrí la captura en Wireshark, fue
 
 Como analistas, una de las primeras cosas que debemos tener siempre presente es:
 
-Quién se está conectando a nuestra red y desde dónde lo está haciendo.
+- Quién se está conectando a nuestra red y desde dónde lo está haciendo.
+
+![Figura 2](img/dana1.png)
 
 Al seguir revisando, noté lo siguiente:
 
-![Figura 1](img/dana1.png)
+- En VirusTotal, el dominio aparecía relacionado con actividad maliciosa.
 
+![Figura 3](img/dana2.png)
+
+También consulté el dominio en URLhaus, donde aparecía reportado en varios registros recientes, lo que reforzaba la correlación con campañas activas de distribución de malware.
+
+![Figura 4](img/dana3.png)
+
+![Figura 5](img/dana4.png)
