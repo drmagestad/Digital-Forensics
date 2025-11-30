@@ -23,7 +23,7 @@ También consulté el dominio en URLhaus, donde aparecía reportado en varios re
 ![Figura 4](img/dana4.png)
 
 Con estos indicios sobre la mesa, era momento de ponernos en marcha y empezar a reconstruir paso a paso lo que realmente había ocurrido en la captura.
-Al revisar el inicio de la captura, se puede observar claramente el three-way handshake previo a la conexión TCP donde ocurre el acceso inicial. También la dirección IP asociada al atacante y el dominio previamente identificado en Virustotal y URLhaus.
+Al revisar el inicio de la captura, se puede observar claramente el three-way handshake previo a la conexión TCP donde ocurre el acceso inicial. También la dirección IP asociada al atacante y el dominio previamente identificado en VirusTotal y URLhaus.
 
 ![Figura 5](img/dana5.png)
 
@@ -31,7 +31,7 @@ Si prestamos suficiente atención a los primeros paquetes posteriores a la conex
 
 ![Figura 6](img/dana6.png)
 
-Y acá es donde entra en juego el tema de los hashes y todo ese análisis adicional. Usualmente estoy acostumbrado a descargar el archivo directamente y calcular su hash con alguna herramienta en Linux, pero en este caso eso no es posible: el dominio ya no funciona. Por lo tanto, toca investigar análisis previos, reportes ya publicados o cualquier referencia que aparezca relacionada con el nombre del archivo para avanzar con la identificación.
+Y acá es donde entran en juego el tema de los hashes y todo ese análisis adicional. Normalmente estoy acostumbrado a descargar el archivo directamente y calcular su hash con alguna herramienta en Linux, pero en este caso eso no es posible: el dominio ya no funciona. Por lo tanto, toca investigar análisis previos, reportes ya publicados o cualquier referencia que aparezca relacionada con el nombre del archivo para avanzar con la identificación.
 
 En mi búsqueda, encontré que en ANY.RUN había información relacionada con el archivo, y para corroborarlo lo verifiqué también en Hybrid-Analysis, donde los resultados coincidían y reforzaban la identificación del malware.
 
@@ -39,7 +39,17 @@ En mi búsqueda, encontré que en ANY.RUN había información relacionada con el
 
 ![Figura 8](img/dana8.png)
 
+Además, en ANY.RUN podemos acceder a un análisis más avanzado, lo que nos permite ver con detalle los procesos ejecutados por el malware durante su ejecución y cómo interactúa con el sistema.
 
+![Figura 9](img/dana9.png)
 
+Aun así, Hybrid-Analysis nos confirma otros datos esenciales para el laboratorio, como la extencion del segundo archivo malicioso que el atacante utilizó durante el contacto inicial.
 
+![Figura 10](img/dana10.png)
 
+Mientras revisaba el reporte completo, hubo un detalle que terminó encajando varias piezas: en la parte donde se listan los archivos generados durante la ejecución aparecen justamente los elementos que necesitábamos para responder las últimas preguntas del laboratorio. Ahí es donde se listan los archivos que el malware genera o descarga durante la ejecución, junto con sus extensiones, nombres y hashes, lo cual permite completar esa parte sin necesidad de tener acceso a la muestra original.
+
+![Figura 11](img/dana11.png)
+
+En resumen, este laboratorio demuestra que incluso cuando no podemos obtener directamente una muestra maliciosa, es posible reconstruir el incidente apoyándonos en fuentes externas, reportes previos y una revisión detallada del tráfico capturado. Cruzar información entre distintos servicios nos permite validar hallazgos, descartar falsos positivos y entender mejor el comportamiento del malware involucrado.
+Como siempre, la clave está en no pasar por alto nada: cada paquete, cada dominio y cada coincidencia cuentan para armar el rompecabezas completo.
